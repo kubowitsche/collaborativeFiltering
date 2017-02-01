@@ -3,10 +3,10 @@
 ################################################################################
 
 /collaborativeFiltering/.vs/config
-/collaborativeFiltering/collaborativeFiltering/obj/Debug
+/collaborativeFiltering/collaborative filtering/obj/Debug
 /collaborativeFiltering/packages
-/collaborativeFiltering/collaborativeFiltering/bin
-/collaborativeFiltering/.vs/collaborativeFiltering/v14
-/collaborativeFiltering/collaborativeFiltering/obj/Release
-/collaborativeFiltering/collaborativeFiltering/collaborativeFiltering.csproj.user
+/collaborativeFiltering/collaborative filtering/bin
+/collaborativeFiltering/.vs/collaborative filtering/v14
+/collaborativeFiltering/collaborative filtering/obj/Release
+/collaborativeFiltering/collaborative filtering/collaborativeFiltering.csproj.user
 
