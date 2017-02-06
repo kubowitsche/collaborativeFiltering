@@ -1,0 +1,13 @@
+apm install autoclose-html
+apm install highlight-selected
+apm install linter
+apm install linter-eslint
+apm install minimap
+apm install minimap-bookmarks
+apm install minimap-cursorline
+apm install minimap-find-and-replace
+apm install minimap-highlight-selected
+apm install minimap-linter
+apm install minimap-selection
+apm install platformio-ide-terminal
+apm install script
