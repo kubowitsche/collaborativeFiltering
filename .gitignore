@@ -2,11 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/collaborativeFiltering/.vs/config
-/collaborativeFiltering/collaborative filtering/obj/Debug
-/collaborativeFiltering/packages
-/collaborativeFiltering/collaborative filtering/bin
-/collaborativeFiltering/.vs/collaborative filtering/v14
-/collaborativeFiltering/collaborative filtering/obj/Release
-/collaborativeFiltering/collaborative filtering/collaborativeFiltering.csproj.user
+/development/.vs/config
+/development/collaborative filtering/obj/Debug
+/development/packages
+/development/collaborative filtering/bin
+/development/.vs/collaborative filtering/v14
+/development/collaborative filtering/obj/Release
+/development/collaborative filtering/collaborativeFiltering.csproj.user
 
