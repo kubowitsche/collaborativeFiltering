@@ -1,0 +1,88 @@
+2017-02-10T15:21:59.846-0600 I CONTROL  [initandlisten] MongoDB starting : pid=13196 port=27017 dbpath=data/db 64-bit host=DESKTOP-9DEVEA0
+2017-02-10T15:21:59.846-0600 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-02-10T15:21:59.846-0600 I CONTROL  [initandlisten] db version v3.4.0
+2017-02-10T15:21:59.846-0600 I CONTROL  [initandlisten] git version: f4240c60f005be757399042dc12f6addbc3170c1
+2017-02-10T15:21:59.846-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t-fips  3 May 2016
+2017-02-10T15:21:59.846-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-10T15:21:59.847-0600 I CONTROL  [initandlisten] modules: none
+2017-02-10T15:21:59.847-0600 I CONTROL  [initandlisten] build environment:
+2017-02-10T15:21:59.847-0600 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-02-10T15:21:59.847-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-10T15:21:59.847-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-10T15:21:59.847-0600 I CONTROL  [initandlisten] options: { config: "mongo.config", storage: { dbPath: "data/db", engine: "mmapv1" }, systemLog: { destination: "file", path: "log/mongo.log" } }
+2017-02-10T15:21:59.856-0600 I JOURNAL  [initandlisten] journal dir=data/db\journal
+2017-02-10T15:21:59.857-0600 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2017-02-10T15:21:59.913-0600 I JOURNAL  [durability] Durability thread started
+2017-02-10T15:21:59.914-0600 I JOURNAL  [journal writer] Journal writer thread started
+2017-02-10T15:21:59.917-0600 I CONTROL  [initandlisten] 
+2017-02-10T15:21:59.917-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-10T15:21:59.917-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-10T15:21:59.917-0600 I CONTROL  [initandlisten] 
+2017-02-10T15:22:00.178-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2017-02-10T15:22:00.182-0600 I NETWORK  [thread1] waiting for connections on port 27017
+2017-02-10T16:40:44.729-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52024 #1 (1 connection now open)
+2017-02-10T16:40:44.940-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52025 #2 (2 connections now open)
+2017-02-10T16:47:40.814-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52199 #3 (3 connections now open)
+2017-02-10T16:47:40.876-0600 I NETWORK  [conn3] received client metadata from 127.0.0.1:52199 conn3: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T16:47:41.049-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52200 #4 (4 connections now open)
+2017-02-10T16:47:41.057-0600 I NETWORK  [conn4] received client metadata from 127.0.0.1:52200 conn4: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T16:47:41.091-0600 I INDEX    [conn4] allocating new ns file data/db\MARS.ns, filling with zeroes...
+2017-02-10T16:47:41.252-0600 I STORAGE  [FileAllocator] allocating new datafile data/db\MARS.0, filling with zeroes...
+2017-02-10T16:47:41.255-0600 I STORAGE  [FileAllocator] creating directory data/db\_tmp
+2017-02-10T16:47:41.264-0600 I STORAGE  [FileAllocator] done allocating datafile data/db\MARS.0, size: 64MB,  took 0.006 secs
+2017-02-10T16:47:41.321-0600 I WRITE    [conn4] update MARS.Test query: { _id: 0 } planSummary: IDHACK update: { _id: 0, text: "This is a test" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 }, acquireWaitCount: { w: 3 }, timeAcquiringMicros: { w: 2232 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 2 } }, Metadata: { acquireCount: { W: 4 } } } 226ms
+2017-02-10T16:47:41.323-0600 I COMMAND  [conn4] command MARS.$cmd command: update { update: "Test", ordered: true, updates: [ { q: { _id: 0 }, u: { _id: 0, text: "This is a test" }, upsert: true } ] } numYields:0 reslen:102 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 }, acquireWaitCount: { w: 3 }, timeAcquiringMicros: { w: 2232 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 2 } }, Metadata: { acquireCount: { W: 4 } } } protocol:op_query 241ms
+2017-02-10T16:48:00.660-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52209 #5 (5 connections now open)
+2017-02-10T16:48:00.723-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52210 #6 (6 connections now open)
+2017-02-10T16:48:25.354-0600 I -        [conn4] end connection 127.0.0.1:52200 (6 connections now open)
+2017-02-10T16:48:25.356-0600 I -        [conn3] end connection 127.0.0.1:52199 (5 connections now open)
+2017-02-10T16:53:51.968-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52339 #7 (5 connections now open)
+2017-02-10T16:53:52.022-0600 I NETWORK  [conn7] received client metadata from 127.0.0.1:52339 conn7: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T16:53:52.189-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52340 #8 (6 connections now open)
+2017-02-10T16:53:52.191-0600 I NETWORK  [conn8] received client metadata from 127.0.0.1:52340 conn8: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T17:00:28.566-0600 I -        [conn7] end connection 127.0.0.1:52339 (6 connections now open)
+2017-02-10T17:00:28.566-0600 I -        [conn8] end connection 127.0.0.1:52340 (6 connections now open)
+2017-02-10T17:06:58.024-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52513 #9 (5 connections now open)
+2017-02-10T17:06:58.070-0600 I NETWORK  [conn9] received client metadata from 127.0.0.1:52513 conn9: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T17:06:58.237-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52514 #10 (6 connections now open)
+2017-02-10T17:06:58.239-0600 I NETWORK  [conn10] received client metadata from 127.0.0.1:52514 conn10: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T17:06:58.262-0600 I INDEX    [conn10] allocating new ns file data/db\No.ns, filling with zeroes...
+2017-02-10T17:06:58.341-0600 I STORAGE  [FileAllocator] allocating new datafile data/db\No.0, filling with zeroes...
+2017-02-10T17:06:58.352-0600 I STORAGE  [FileAllocator] done allocating datafile data/db\No.0, size: 64MB,  took 0.008 secs
+2017-02-10T17:06:58.363-0600 I WRITE    [conn10] update No.Test query: { _id: 0 } planSummary: IDHACK update: { _id: 0, text: "This is a test" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 47 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 2 } }, Metadata: { acquireCount: { W: 4 } } } 101ms
+2017-02-10T17:06:58.363-0600 I COMMAND  [conn10] command No.$cmd command: update { update: "Test", ordered: true, updates: [ { q: { _id: 0 }, u: { _id: 0, text: "This is a test" }, upsert: true } ] } numYields:0 reslen:102 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 47 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 2 } }, Metadata: { acquireCount: { W: 4 } } } protocol:op_query 101ms
+2017-02-10T17:12:08.822-0600 I -        [conn10] end connection 127.0.0.1:52514 (6 connections now open)
+2017-02-10T17:12:08.822-0600 I -        [conn9] end connection 127.0.0.1:52513 (6 connections now open)
+2017-02-10T17:13:15.206-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52664 #11 (5 connections now open)
+2017-02-10T17:13:41.485-0600 I -        [conn11] end connection 127.0.0.1:52664 (5 connections now open)
+2017-02-10T17:14:06.649-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52775 #12 (5 connections now open)
+2017-02-10T17:14:06.686-0600 I NETWORK  [conn12] received client metadata from 127.0.0.1:52775 conn12: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T17:14:06.843-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52776 #13 (6 connections now open)
+2017-02-10T17:14:06.845-0600 I NETWORK  [conn13] received client metadata from 127.0.0.1:52776 conn13: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-10T17:14:06.869-0600 I INDEX    [conn13] allocating new ns file data/db\ThisIsADatabase.ns, filling with zeroes...
+2017-02-10T17:14:07.014-0600 I STORAGE  [FileAllocator] allocating new datafile data/db\ThisIsADatabase.0, filling with zeroes...
+2017-02-10T17:14:07.022-0600 I STORAGE  [FileAllocator] done allocating datafile data/db\ThisIsADatabase.0, size: 64MB,  took 0.007 secs
+2017-02-10T17:14:07.036-0600 I WRITE    [conn13] update ThisIsADatabase.Test query: { _id: 0 } planSummary: IDHACK update: { _id: 0, text: "This is a test" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 }, acquireWaitCount: { w: 2 }, timeAcquiringMicros: { w: 358 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 2 } }, Metadata: { acquireCount: { W: 4 } } } 165ms
+2017-02-10T17:14:07.036-0600 I COMMAND  [conn13] command ThisIsADatabase.$cmd command: update { update: "Test", ordered: true, updates: [ { q: { _id: 0 }, u: { _id: 0, text: "This is a test" }, upsert: true } ] } numYields:0 reslen:102 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 }, acquireWaitCount: { w: 2 }, timeAcquiringMicros: { w: 358 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 2 } }, Metadata: { acquireCount: { W: 4 } } } protocol:op_query 167ms
+2017-02-10T17:14:49.836-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52785 #14 (7 connections now open)
+2017-02-10T17:14:49.909-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:52786 #15 (8 connections now open)
+2017-02-10T17:25:06.889-0600 I -        [conn13] end connection 127.0.0.1:52776 (8 connections now open)
+2017-02-10T17:36:15.880-0600 I CONTROL  [thread2] CTRL_CLOSE_EVENT signal
+2017-02-10T17:36:15.882-0600 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2017-02-10T17:36:15.884-0600 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-02-10T17:36:15.885-0600 I NETWORK  [consoleTerminate] closing listening socket: 512
+2017-02-10T17:36:15.885-0600 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-02-10T17:36:15.887-0600 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-02-10T17:36:15.902-0600 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2017-02-10T17:36:15.902-0600 I STORAGE  [consoleTerminate] shutdown: final commit...
+2017-02-10T17:36:15.913-0600 I JOURNAL  [consoleTerminate] journalCleanup...
+2017-02-10T17:36:15.920-0600 I JOURNAL  [consoleTerminate] removeJournalFiles
+2017-02-10T17:36:15.920-0600 I JOURNAL  [consoleTerminate] old journal file will be removed: data/db\journal\j._0
+2017-02-10T17:36:15.922-0600 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2017-02-10T17:36:16.006-0600 I JOURNAL  [journal writer] Journal writer thread stopped
+2017-02-10T17:36:16.011-0600 I JOURNAL  [durability] Durability thread stopped
+2017-02-10T17:36:16.011-0600 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2017-02-10T17:36:16.016-0600 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2017-02-10T17:36:16.017-0600 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-02-10T17:36:16.018-0600 I CONTROL  [consoleTerminate] now exiting
+2017-02-10T17:36:16.020-0600 I CONTROL  [consoleTerminate] shutting down with code:12
