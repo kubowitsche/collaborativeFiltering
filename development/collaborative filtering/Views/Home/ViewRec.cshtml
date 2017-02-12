@@ -1,17 +1,15 @@
 ﻿@{
-    ViewBag.Title = "View Recommendation";
+    ViewBag.Title = "View Recommendations!";
 }
-<h2>@ViewBag.Title.</h2>
+<h2 >@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div id="recommendation" class="row">
+    <h2>We Recommend...</h2>
+    @*<%:@Html.TextAreaFor(r => ReviewItem.name)%>
+    <%:@Html.TextAreaFor(r => ReviewItem.description)%>
+    <p>We're <%:@Html.TextAreaFor(r => Recommendation.estimatedRating)%> sure you'll like this</p>*@
+</div>
+<div class="row">
+    <p>@Html.ActionLink("Generate a new recommendation", "GenerateRecommendation")</p>
+</div>
