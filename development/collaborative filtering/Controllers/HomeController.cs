@@ -13,14 +13,14 @@ namespace collaborative_filtering.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Create()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ViewRec()
         {
             ViewBag.Message = "Your contact page.";
 
