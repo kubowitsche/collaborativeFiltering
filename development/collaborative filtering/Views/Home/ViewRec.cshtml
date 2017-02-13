@@ -1,15 +1,14 @@
 ﻿@{
     ViewBag.Title = "View Recommendations!";
 }
-<h2 >@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
+<h2 >@ViewBag.Title</h2>
+@model collaborative_filtering.Models.ReviewItem
 <div id="recommendation" class="row">
-    <h2>We Recommend...</h2>
-    @*<%:@Html.TextAreaFor(r => ReviewItem.name)%>
-    <%:@Html.TextAreaFor(r => ReviewItem.description)%>
-    <p>We're <%:@Html.TextAreaFor(r => Recommendation.estimatedRating)%> sure you'll like this</p>*@
+    <h3>We Recommend...</h3>
+    <h4>@Html.ValueFor(r => Model.Name)</h4>
+    <p>@Html.ValueFor(r => Model.Description)</p>
+    <p>We're @Html.ValueFor(r => Model.recommendation.EstimatedRating) sure you'll like this</p>
 </div>
 <div class="row">
-    <p>@Html.ActionLink("Generate a new recommendation", "GenerateRecommendation")</p>
+    <p class="btn btn-default">@Html.ActionLink("Generate a new recommendation", "ViewRec")</p>
 </div>

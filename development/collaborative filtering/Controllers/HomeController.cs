@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using collaborative_filtering.Models;
 
 namespace collaborative_filtering.Controllers
 {
@@ -22,9 +19,13 @@ namespace collaborative_filtering.Controllers
 
         public ActionResult ViewRec()
         {
-            ViewBag.Message = "Your contact page.";
+            GenerateRecommendation();
+            return View(new ReviewItem());
+        }
 
-            return View();
+        public void GenerateRecommendation()
+        {
+
         }
     }
 }
