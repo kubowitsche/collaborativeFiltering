@@ -27,5 +27,12 @@ namespace collaborative_filtering.Controllers
         {
 
         }
+        public ActionResult AddReview(CreateReview model)
+        {
+
+            return View();
+
+
+        }
     }
 }
