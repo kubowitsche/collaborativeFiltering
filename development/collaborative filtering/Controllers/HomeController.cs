@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DataAcess.Dto;
+using collaborative_filtering.Models;
 
 namespace collaborative_filtering.Controllers
 {
@@ -23,18 +24,29 @@ namespace collaborative_filtering.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Create()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ViewRec()
         {
-            ViewBag.Message = "Your contact page.";
+            GenerateRecommendation();
+            return View(new ReviewItem());
+        }
+
+        public void GenerateRecommendation()
+        {
+
+        }
+        public ActionResult AddReview(CreateReview model)
+        {
 
             return View();
+
+
         }
     }
 }

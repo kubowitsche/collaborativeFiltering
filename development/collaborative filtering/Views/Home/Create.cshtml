@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Create Review";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@model collaborative_filtering.Models.CreateReview
+<div id="createReview" class="row">
+    <h3>Make a review!</h3>
+    @using (Html.BeginForm("AddReview"))
+
+    {
+    <p>Enter your rating:</p>
+    @Html.TextBoxFor(c=>c.rating)
+        <p>Enter your text:</p>
+        @Html.TextBoxFor(c => c.text)
+        <input type="submit" value="AddReview" />
+    </form>
+    }
+
+</div>
