@@ -11,7 +11,5 @@ namespace DataAcess.IDao
     public interface IReviewDao
     {
         void Save(ReviewDto reviewDto);
-        void Delete(ReviewDto reviewDto);
-        void Update(long user_id, long item_id);
     }
 }

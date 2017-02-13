@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using DataAcess.Dto;
 using DataAcess.IDao;
 using DataAcess.Mongo;
@@ -7,18 +8,19 @@ namespace DataAcess.Dao
 {
     public class UserDao : MongoBase<UserDto>, IUserDao
     {
+        public UserDao() : base("ThisIsADatabase.Users")
+        {
+        }
         public void Save(UserDto dto)
         {
-            throw new System.NotImplementedException();
+            GetCollection().Save(dto);
         }
 
         public List<UserDto> GetAllUsers()
         {
-            throw new System.NotImplementedException();
+            return GetCollection().FindAll().ToList();
         }
 
-        public UserDao(string collectionName) : base(collectionName)
-        {
-        }
+       
     }
 }

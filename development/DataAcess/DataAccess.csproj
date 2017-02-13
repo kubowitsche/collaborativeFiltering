@@ -60,18 +60,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dao\ReccommendationgDao.cs" />
+    <Compile Include="Dao\ReccommendationDao.cs" />
     <Compile Include="Dao\ReviewDao.cs" />
     <Compile Include="Dao\ReviewItemDao.cs" />
-    <Compile Include="Dao\TestDao.cs" />
+    <Compile Include="Dao\UserDao.cs" />
     <Compile Include="Dto\ReccommendationDto.cs" />
     <Compile Include="Dto\ReviewDto.cs" />
     <Compile Include="Dto\ReviewItemDto.cs" />
-    <Compile Include="Dto\TestDto.cs" />
+    <Compile Include="Dto\UserDto.cs" />
     <Compile Include="IDao\IReccommendationDao.cs" />
     <Compile Include="IDao\IReviewDao.cs" />
     <Compile Include="IDao\IReviewItemDao.cs" />
-    <Compile Include="IDao\ITestDao.cs" />
+    <Compile Include="IDao\IUserDao.cs" />
     <Compile Include="Mongo\MongoBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
