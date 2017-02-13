@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataAcess.Dto
 {
-    public class TestDto
+    public class ReviewDto
     {
-        public int id { get; set; }
+        public long user_id { get; set; }
+        public long item_id { get; set; }
+        public int rating { get; set; }
         public string text { get; set; }
     }
 }
