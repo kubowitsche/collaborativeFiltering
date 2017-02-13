@@ -25,5 +25,10 @@ namespace DataAcess.Dao
         {
             GetCollection().FindOne(Query.EQ("_id", id));
         }
+
+        public void GetByName(string name)
+        {
+            GetCollection().Find(Query.EQ("name", name));
+        }
     }
 }
