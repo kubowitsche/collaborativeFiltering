@@ -21,14 +21,14 @@ namespace DataAcess.Dao
             GetCollection().Remove(Query.EQ("_id", dto.id));
         }
 
-        public void GetById(long id)
+        public ReviewItemDto GetById(long id)
         {
-            GetCollection().FindOne(Query.EQ("_id", id));
+            return GetCollection().FindOne(Query.EQ("_id", id));
         }
 
-        public void GetByName(string name)
+        public ReviewItemDto GetByName(string name)
         {
-            GetCollection().Find(Query.EQ("name", name));
+            return GetCollection().FindOne(Query.EQ("name", name));
         }
     }
 }

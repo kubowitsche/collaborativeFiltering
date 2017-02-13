@@ -6,7 +6,7 @@ namespace DataAcess.IDao
     {
         void Save(ReviewItemDto dto);
         void Delete(ReviewItemDto dto);
-        void GetById(long id);
-        void GetByName(string name);
+        ReviewItemDto GetById(long id);
+        ReviewItemDto GetByName(string name);
     }
 }
