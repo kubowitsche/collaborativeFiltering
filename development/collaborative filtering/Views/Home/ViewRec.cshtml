@@ -7,7 +7,7 @@
     <h3>We Recommend...</h3>
     <h4>@Html.ValueFor(r => Model.Name)</h4>
     <p>@Html.ValueFor(r => Model.Description)</p>
-    <p>We're @Html.ValueFor(r => Model.recommendation.EstimatedRating) sure you'll like this</p>
+    <p>We think you would rate this item with @Html.ValueFor(r => Model.recommendation.EstimatedRating) stars</p>
 </div>
 <div class="row">
     <p class="btn btn-default">@Html.ActionLink("Generate a new recommendation", "ViewRec")</p>

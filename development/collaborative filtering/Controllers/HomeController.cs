@@ -6,21 +6,19 @@ using System.Web;
 using System.Web.Mvc;
 using DataAcess.Dto;
 using collaborative_filtering.Models;
+using DataAcess.IDao;
 
 namespace collaborative_filtering.Controllers
 {
     public class HomeController : Controller
     {
+        IUserDao userDao = new UserDao();
+        IReccommendationDao recDao = new ReccommendationDao();
+        IReviewItemDao itemDao = new ReviewItemDao();
+
+
         public ActionResult Index()
         {
-            var _testDao = new TestDao();
-            var _testDto = new TestDto
-            {
-                id = 0,
-                text = "This is a test"
-            };
-
-            _testDao.Save(_testDto);
             return View();
         }
 
@@ -33,14 +31,32 @@ namespace collaborative_filtering.Controllers
 
         public ActionResult ViewRec()
         {
-            GenerateRecommendation();
-            return View(new ReviewItem());
+            ReviewItem item = GenerateRecommendation();
+            return View(item);
         }
 
-        public void GenerateRecommendation()
+        public ReviewItem GenerateRecommendation()
         {
-
+            //get users
+            List<UserDto> users = userDao.GetAllUsers();
+            UserDto user = users.First();
+            //get recommendations by user id
+            List<ReccommendationDto> recommendations = recDao.GetByUserId(user.user_id);
+            //find top 10
+            recommendations.Sort();//Figure out your comaparer
+            int choosing = recommendations.Count() > 9 ? 10 : recommendations.Count()-1;
+            Random rnd = new Random();
+            int random = rnd.Next(0, choosing);
+            long itemId = recommendations.ElementAt(random).item_id;
+            ReviewItemDto revItem = itemDao.GetById(itemId);
+            ReviewItem modelItem = new ReviewItem();
+            modelItem.Description = revItem.description;
+            modelItem.Name = revItem.name;
+            modelItem.recommendation = new Recommendation();
+            modelItem.recommendation.EstimatedRating = recommendations.ElementAt(random).rating;
+            return modelItem;
         }
+
         public ActionResult AddReview(CreateReview model)
         {
 
