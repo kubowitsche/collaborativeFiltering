@@ -65,7 +65,8 @@ namespace collaborative_filtering.Controllers
             review.text = model.text;
             Random rnd = new Random();
             int random = rnd.Next(100000, 30000);
-            long userID = rnd.Next(30000, 50000);
+            int random2 = rnd.Next(30000, 50000);
+            long userID = Convert.ToInt64(random2);
             long itemID = Convert.ToInt64(random);
             review.item_id = itemID;
             review.item_id = userID;
