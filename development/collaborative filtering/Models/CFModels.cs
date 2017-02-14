@@ -14,7 +14,7 @@ namespace collaborative_filtering.Models
         public int EstimatedRating { get; set; }
     }
     public class CreateReview {
-        public string rating { get; set; }
+        public int rating { get; set; }
         public string text { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace collaborative_filtering.Controllers
         IUserDao userDao = new UserDao();
         IReccommendationDao recDao = new ReccommendationDao();
         IReviewItemDao itemDao = new ReviewItemDao();
+        IReviewDao reviewDao = new ReviewDao();
 
 
         public ActionResult Index()
@@ -59,6 +60,17 @@ namespace collaborative_filtering.Controllers
 
         public ActionResult AddReview(CreateReview model)
         {
+            ReviewDto review = new ReviewDto();
+            review.rating = model.rating;
+            review.text = model.text;
+            Random rnd = new Random();
+            int random = rnd.Next(100000, 30000);
+            long userID = rnd.Next(30000, 50000);
+            long itemID = Convert.ToInt64(random);
+            review.item_id = itemID;
+            review.item_id = userID;
+
+            reviewDao.Save(review);
 
             return View();
 
