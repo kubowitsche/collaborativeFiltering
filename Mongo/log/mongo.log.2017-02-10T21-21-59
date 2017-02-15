@@ -1,0 +1,53 @@
+2017-02-10T15:16:13.053-0600 I CONTROL  [initandlisten] MongoDB starting : pid=9436 port=27017 dbpath=data/db 64-bit host=MSOE-CND6328F6L
+2017-02-10T15:16:13.053-0600 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-02-10T15:16:13.053-0600 I CONTROL  [initandlisten] db version v3.4.2
+2017-02-10T15:16:13.054-0600 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-02-10T15:16:13.054-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-02-10T15:16:13.054-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-10T15:16:13.054-0600 I CONTROL  [initandlisten] modules: none
+2017-02-10T15:16:13.054-0600 I CONTROL  [initandlisten] build environment:
+2017-02-10T15:16:13.056-0600 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-02-10T15:16:13.056-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-10T15:16:13.056-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-10T15:16:13.056-0600 I CONTROL  [initandlisten] options: { config: "mongo.config", storage: { dbPath: "data/db", engine: "mmapv1" }, systemLog: { destination: "file", path: "log/mongo.log" } }
+2017-02-10T15:16:13.064-0600 I JOURNAL  [initandlisten] journal dir=data/db\journal
+2017-02-10T15:16:13.064-0600 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2017-02-10T15:16:13.092-0600 I JOURNAL  [durability] Durability thread started
+2017-02-10T15:16:13.095-0600 I JOURNAL  [journal writer] Journal writer thread started
+2017-02-10T15:16:13.099-0600 I CONTROL  [initandlisten] 
+2017-02-10T15:16:13.099-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-10T15:16:13.099-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-10T15:16:13.099-0600 I CONTROL  [initandlisten] 
+2017-02-10T15:16:13.111-0600 I INDEX    [initandlisten] allocating new ns file data/db\local.ns, filling with zeroes...
+2017-02-10T15:16:13.282-0600 I STORAGE  [FileAllocator] allocating new datafile data/db\local.0, filling with zeroes...
+2017-02-10T15:16:13.283-0600 I STORAGE  [FileAllocator] creating directory data/db\_tmp
+2017-02-10T15:16:13.288-0600 I STORAGE  [FileAllocator] done allocating datafile data/db\local.0, size: 64MB,  took 0.003 secs
+2017-02-10T15:16:13.465-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2017-02-10T15:16:13.470-0600 I INDEX    [initandlisten] allocating new ns file data/db\admin.ns, filling with zeroes...
+2017-02-10T15:16:13.636-0600 I STORAGE  [FileAllocator] allocating new datafile data/db\admin.0, filling with zeroes...
+2017-02-10T15:16:13.640-0600 I STORAGE  [FileAllocator] done allocating datafile data/db\admin.0, size: 64MB,  took 0.003 secs
+2017-02-10T15:16:13.647-0600 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-02-10T15:16:13.647-0600 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-10T15:16:13.648-0600 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-02-10T15:16:13.648-0600 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-02-10T15:16:13.649-0600 I NETWORK  [thread1] waiting for connections on port 27017
+2017-02-10T15:17:17.317-0600 I CONTROL  [thread2] CTRL_CLOSE_EVENT signal
+2017-02-10T15:17:17.317-0600 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2017-02-10T15:17:17.317-0600 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-02-10T15:17:17.317-0600 I NETWORK  [consoleTerminate] closing listening socket: 520
+2017-02-10T15:17:17.317-0600 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-02-10T15:17:17.317-0600 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-02-10T15:17:17.324-0600 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2017-02-10T15:17:17.324-0600 I STORAGE  [consoleTerminate] shutdown: final commit...
+2017-02-10T15:17:17.327-0600 I JOURNAL  [consoleTerminate] journalCleanup...
+2017-02-10T15:17:17.330-0600 I JOURNAL  [consoleTerminate] removeJournalFiles
+2017-02-10T15:17:17.331-0600 I JOURNAL  [consoleTerminate] old journal file will be removed: data/db\journal\j._0
+2017-02-10T15:17:17.331-0600 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2017-02-10T15:17:17.358-0600 I JOURNAL  [journal writer] Journal writer thread stopped
+2017-02-10T15:17:17.358-0600 I JOURNAL  [durability] Durability thread stopped
+2017-02-10T15:17:17.358-0600 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2017-02-10T15:17:17.360-0600 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2017-02-10T15:17:17.360-0600 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-02-10T15:17:17.360-0600 I CONTROL  [consoleTerminate] now exiting
+2017-02-10T15:17:17.360-0600 I CONTROL  [consoleTerminate] shutting down with code:12
+2017-02-10T15:17:17.360-0600 

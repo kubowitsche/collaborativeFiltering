@@ -1,0 +1,129 @@
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] MongoDB starting : pid=10332 port=27017 dbpath=data/db 64-bit host=MSOE-CND6328F7D
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] db version v3.4.2
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] git version: 3f76e40c105fc223b3e5aac3e20dcd026b83b38b
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] modules: none
+2017-02-14T21:52:11.179-0600 I CONTROL  [initandlisten] build environment:
+2017-02-14T21:52:11.181-0600 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-02-14T21:52:11.181-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-14T21:52:11.181-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-14T21:52:11.181-0600 I CONTROL  [initandlisten] options: { config: "mongo.config", storage: { dbPath: "data/db", engine: "mmapv1" }, systemLog: { destination: "file", path: "log/mongo.log" } }
+2017-02-14T21:52:11.188-0600 I JOURNAL  [initandlisten] journal dir=data/db\journal
+2017-02-14T21:52:11.188-0600 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2017-02-14T21:52:11.202-0600 I JOURNAL  [durability] Durability thread started
+2017-02-14T21:52:11.203-0600 I JOURNAL  [journal writer] Journal writer thread started
+2017-02-14T21:52:11.204-0600 I CONTROL  [initandlisten] 
+2017-02-14T21:52:11.204-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-14T21:52:11.204-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-14T21:52:11.204-0600 I CONTROL  [initandlisten] 
+2017-02-14T21:52:11.296-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2017-02-14T21:52:11.299-0600 I NETWORK  [thread1] waiting for connections on port 27017
+2017-02-14T21:52:42.873-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64187 #1 (1 connection now open)
+2017-02-14T21:52:42.906-0600 I NETWORK  [conn1] received client metadata from 127.0.0.1:64187 conn1: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T21:52:43.002-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64188 #2 (2 connections now open)
+2017-02-14T21:52:43.004-0600 I NETWORK  [conn2] received client metadata from 127.0.0.1:64188 conn2: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T21:53:16.404-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64230 #3 (3 connections now open)
+2017-02-14T21:53:16.404-0600 I NETWORK  [conn3] received client metadata from 127.0.0.1:64230 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.2" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-02-14T21:56:55.196-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64494 #4 (4 connections now open)
+2017-02-14T21:56:55.207-0600 I -        [conn4] end connection 127.0.0.1:64494 (4 connections now open)
+2017-02-14T21:58:01.491-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64578 #5 (4 connections now open)
+2017-02-14T21:58:01.509-0600 I -        [conn5] end connection 127.0.0.1:64578 (4 connections now open)
+2017-02-14T21:58:37.837-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64615 #6 (4 connections now open)
+2017-02-14T21:58:38.002-0600 I -        [conn6] end connection 127.0.0.1:64615 (4 connections now open)
+2017-02-14T21:59:40.236-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64692 #7 (4 connections now open)
+2017-02-14T21:59:40.242-0600 I -        [conn7] end connection 127.0.0.1:64692 (4 connections now open)
+2017-02-14T22:00:05.683-0600 I -        [conn2] end connection 127.0.0.1:64188 (3 connections now open)
+2017-02-14T22:00:05.683-0600 I -        [conn1] end connection 127.0.0.1:64187 (3 connections now open)
+2017-02-14T22:00:44.763-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64868 #8 (2 connections now open)
+2017-02-14T22:00:44.798-0600 I NETWORK  [conn8] received client metadata from 127.0.0.1:64868 conn8: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:00:44.879-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:64869 #9 (3 connections now open)
+2017-02-14T22:00:44.881-0600 I NETWORK  [conn9] received client metadata from 127.0.0.1:64869 conn9: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:01:02.790-0600 I -        [conn8] end connection 127.0.0.1:64868 (3 connections now open)
+2017-02-14T22:01:02.791-0600 I -        [conn9] end connection 127.0.0.1:64869 (2 connections now open)
+2017-02-14T22:01:33.070-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:65027 #10 (2 connections now open)
+2017-02-14T22:01:33.109-0600 I NETWORK  [conn10] received client metadata from 127.0.0.1:65027 conn10: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:01:33.222-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:65028 #11 (3 connections now open)
+2017-02-14T22:01:33.225-0600 I NETWORK  [conn11] received client metadata from 127.0.0.1:65028 conn11: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:02:49.471-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:65111 #12 (4 connections now open)
+2017-02-14T22:02:49.478-0600 I -        [conn12] end connection 127.0.0.1:65111 (4 connections now open)
+2017-02-14T22:04:15.369-0600 I -        [conn10] end connection 127.0.0.1:65027 (3 connections now open)
+2017-02-14T22:04:15.369-0600 I -        [conn11] end connection 127.0.0.1:65028 (3 connections now open)
+2017-02-14T22:04:54.923-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:65360 #13 (2 connections now open)
+2017-02-14T22:04:54.954-0600 I NETWORK  [conn13] received client metadata from 127.0.0.1:65360 conn13: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:04:55.065-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:65361 #14 (3 connections now open)
+2017-02-14T22:04:55.067-0600 I NETWORK  [conn14] received client metadata from 127.0.0.1:65361 conn14: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:06:22.001-0600 I -        [conn13] end connection 127.0.0.1:65360 (3 connections now open)
+2017-02-14T22:06:22.001-0600 I -        [conn14] end connection 127.0.0.1:65361 (2 connections now open)
+2017-02-14T22:07:01.570-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:49235 #15 (2 connections now open)
+2017-02-14T22:07:01.602-0600 I NETWORK  [conn15] received client metadata from 127.0.0.1:49235 conn15: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:07:01.689-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:49236 #16 (3 connections now open)
+2017-02-14T22:07:01.691-0600 I NETWORK  [conn16] received client metadata from 127.0.0.1:49236 conn16: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:07:17.293-0600 I -        [conn16] end connection 127.0.0.1:49236 (3 connections now open)
+2017-02-14T22:07:17.293-0600 I -        [conn15] end connection 127.0.0.1:49235 (3 connections now open)
+2017-02-14T22:08:09.765-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:49408 #17 (2 connections now open)
+2017-02-14T22:08:09.796-0600 I NETWORK  [conn17] received client metadata from 127.0.0.1:49408 conn17: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:08:09.889-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:49409 #18 (3 connections now open)
+2017-02-14T22:08:09.891-0600 I NETWORK  [conn18] received client metadata from 127.0.0.1:49409 conn18: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:08:36.330-0600 I -        [conn17] end connection 127.0.0.1:49408 (3 connections now open)
+2017-02-14T22:08:36.330-0600 I -        [conn18] end connection 127.0.0.1:49409 (3 connections now open)
+2017-02-14T22:12:20.744-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:49801 #19 (2 connections now open)
+2017-02-14T22:12:20.775-0600 I NETWORK  [conn19] received client metadata from 127.0.0.1:49801 conn19: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:12:20.870-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:49802 #20 (3 connections now open)
+2017-02-14T22:12:20.872-0600 I NETWORK  [conn20] received client metadata from 127.0.0.1:49802 conn20: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:12:39.715-0600 I -        [conn20] end connection 127.0.0.1:49802 (3 connections now open)
+2017-02-14T22:12:39.715-0600 I -        [conn19] end connection 127.0.0.1:49801 (3 connections now open)
+2017-02-14T22:13:55.789-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50025 #21 (2 connections now open)
+2017-02-14T22:13:55.818-0600 I NETWORK  [conn21] received client metadata from 127.0.0.1:50025 conn21: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:13:55.934-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50026 #22 (3 connections now open)
+2017-02-14T22:13:55.936-0600 I NETWORK  [conn22] received client metadata from 127.0.0.1:50026 conn22: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:14:06.437-0600 I -        [conn21] end connection 127.0.0.1:50025 (3 connections now open)
+2017-02-14T22:14:06.437-0600 I -        [conn22] end connection 127.0.0.1:50026 (2 connections now open)
+2017-02-14T22:14:31.932-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50169 #23 (2 connections now open)
+2017-02-14T22:14:31.961-0600 I NETWORK  [conn23] received client metadata from 127.0.0.1:50169 conn23: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:14:32.053-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50170 #24 (3 connections now open)
+2017-02-14T22:14:32.055-0600 I NETWORK  [conn24] received client metadata from 127.0.0.1:50170 conn24: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:15:06.620-0600 I -        [conn23] end connection 127.0.0.1:50169 (3 connections now open)
+2017-02-14T22:15:06.620-0600 I -        [conn24] end connection 127.0.0.1:50170 (2 connections now open)
+2017-02-14T22:16:42.717-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50420 #25 (2 connections now open)
+2017-02-14T22:16:42.748-0600 I NETWORK  [conn25] received client metadata from 127.0.0.1:50420 conn25: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:16:42.880-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50421 #26 (3 connections now open)
+2017-02-14T22:16:42.882-0600 I NETWORK  [conn26] received client metadata from 127.0.0.1:50421 conn26: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:18:45.242-0600 I -        [conn26] end connection 127.0.0.1:50421 (3 connections now open)
+2017-02-14T22:18:45.242-0600 I -        [conn25] end connection 127.0.0.1:50420 (3 connections now open)
+2017-02-14T22:20:32.671-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50795 #27 (2 connections now open)
+2017-02-14T22:20:32.701-0600 I NETWORK  [conn27] received client metadata from 127.0.0.1:50795 conn27: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:20:32.824-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50796 #28 (3 connections now open)
+2017-02-14T22:20:32.826-0600 I NETWORK  [conn28] received client metadata from 127.0.0.1:50796 conn28: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:20:44.557-0600 I -        [conn28] end connection 127.0.0.1:50796 (3 connections now open)
+2017-02-14T22:20:44.557-0600 I -        [conn27] end connection 127.0.0.1:50795 (3 connections now open)
+2017-02-14T22:21:10.486-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50936 #29 (2 connections now open)
+2017-02-14T22:21:10.516-0600 I NETWORK  [conn29] received client metadata from 127.0.0.1:50936 conn29: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:21:10.607-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50937 #30 (3 connections now open)
+2017-02-14T22:21:10.609-0600 I NETWORK  [conn30] received client metadata from 127.0.0.1:50937 conn30: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:21:42.611-0600 I -        [conn29] end connection 127.0.0.1:50936 (3 connections now open)
+2017-02-14T22:21:42.611-0600 I -        [conn30] end connection 127.0.0.1:50937 (2 connections now open)
+2017-02-14T22:22:12.144-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:51101 #31 (2 connections now open)
+2017-02-14T22:22:12.176-0600 I NETWORK  [conn31] received client metadata from 127.0.0.1:51101 conn31: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:22:12.264-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:51102 #32 (3 connections now open)
+2017-02-14T22:22:12.265-0600 I NETWORK  [conn32] received client metadata from 127.0.0.1:51102 conn32: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.10586", architecture: "x86_32", version: "10.0.10586" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T22:23:10.564-0600 I CONTROL  [thread2] Ctrl-C signal
+2017-02-14T22:23:10.564-0600 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-02-14T22:23:10.564-0600 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-02-14T22:23:10.564-0600 I NETWORK  [consoleTerminate] closing listening socket: 500
+2017-02-14T22:23:10.565-0600 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-02-14T22:23:10.565-0600 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-02-14T22:23:10.566-0600 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2017-02-14T22:23:10.566-0600 I STORAGE  [consoleTerminate] shutdown: final commit...
+2017-02-14T22:23:10.576-0600 I JOURNAL  [consoleTerminate] journalCleanup...
+2017-02-14T22:23:10.576-0600 I JOURNAL  [consoleTerminate] removeJournalFiles
+2017-02-14T22:23:10.576-0600 I JOURNAL  [consoleTerminate] old journal file will be removed: data/db\journal\j._0
+2017-02-14T22:23:10.577-0600 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2017-02-14T22:23:10.600-0600 I JOURNAL  [journal writer] Journal writer thread stopped
+2017-02-14T22:23:10.601-0600 I JOURNAL  [durability] Durability thread stopped
+2017-02-14T22:23:10.601-0600 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2017-02-14T22:23:10.603-0600 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2017-02-14T22:23:10.603-0600 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-02-14T22:23:10.603-0600 I CONTROL  [consoleTerminate] now exiting
+2017-02-14T22:23:10.603-0600 I CONTROL  [consoleTerminate] shutting down with code:12
