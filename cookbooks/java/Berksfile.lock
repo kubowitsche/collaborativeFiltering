@@ -1,0 +1,28 @@
+DEPENDENCIES
+  freebsd_bash
+    path: test/fixtures/cookbooks/freebsd_bash
+  homebrew
+  java
+    path: .
+    metadata: true
+  test_java
+    path: test/fixtures/cookbooks/test_java
+  windows
+  yum
+
+GRAPH
+  apt (5.0.1)
+    compat_resource (>= 12.16.3)
+  compat_resource (12.16.3)
+  freebsd_bash (0.1.0)
+  homebrew (3.0.0)
+  java (1.47.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  ohai (4.2.3)
+    compat_resource (>= 12.14.7)
+  test_java (0.1.0)
+  windows (2.1.1)
+    ohai (>= 4.0.0)
+  yum (4.1.0)
