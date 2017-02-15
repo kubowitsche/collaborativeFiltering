@@ -10,6 +10,6 @@ namespace DataAcess.Dto
     {
         public long user_id { get; set; }
         public long item_id { get; set; }
-        public int rating { get; set; }
+        public float rating { get; set; }
     }
 }
