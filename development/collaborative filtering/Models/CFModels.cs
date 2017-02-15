@@ -11,7 +11,7 @@ namespace collaborative_filtering.Models
     }
     public class Recommendation
     {
-        public int EstimatedRating { get; set; }
+        public float EstimatedRating { get; set; }
     }
     public class CreateReview {
         public int rating { get; set; }
