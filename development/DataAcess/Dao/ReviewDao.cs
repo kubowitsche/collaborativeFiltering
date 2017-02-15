@@ -7,7 +7,7 @@ namespace DataAcess.Dao
 {
     public class ReviewDao : MongoBase<ReviewDto>, IReviewDao
     {
-        public ReviewDao() : base("ThisIsADatabase.Review")
+        public ReviewDao() : base("Review")
         {
         }
 

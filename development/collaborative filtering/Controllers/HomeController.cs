@@ -47,14 +47,15 @@ namespace collaborative_filtering.Controllers
             recommendations.Sort();//Figure out your comaparer
             int choosing = recommendations.Count() > 9 ? 10 : recommendations.Count()-1;
             Random rnd = new Random();
-            int random = rnd.Next(0, choosing);
-            long itemId = recommendations.ElementAt(random).item_id;
-            ReviewItemDto revItem = itemDao.GetById(itemId);
+            //int random = rnd.Next(0, choosing);
+            int random = rnd.Next(0, 1000);
+            //long itemId = recommendations.ElementAt(random).item_id;
+            ReviewItemDto revItem = itemDao.GetById(random);
             ReviewItem modelItem = new ReviewItem();
             modelItem.Description = revItem.description;
             modelItem.Name = revItem.name;
             modelItem.recommendation = new Recommendation();
-            modelItem.recommendation.EstimatedRating = recommendations.ElementAt(random).rating;
+            //modelItem.recommendation.EstimatedRating = recommendations.ElementAt(random).rating;
             return modelItem;
         }
 

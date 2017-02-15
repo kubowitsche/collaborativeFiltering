@@ -8,7 +8,7 @@ namespace DataAcess.Dao
 {
     public class UserDao : MongoBase<UserDto>, IUserDao
     {
-        public UserDao() : base("ThisIsADatabase.Users")
+        public UserDao() : base("Users")
         {
         }
         public void Save(UserDto dto)

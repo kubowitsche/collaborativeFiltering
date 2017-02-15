@@ -1,0 +1,93 @@
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] MongoDB starting : pid=2932 port=27017 dbpath=data/db 64-bit host=DESKTOP-9DEVEA0
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] db version v3.4.0
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] git version: f4240c60f005be757399042dc12f6addbc3170c1
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t-fips  3 May 2016
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] modules: none
+2017-02-14T19:11:52.566-0600 I CONTROL  [initandlisten] build environment:
+2017-02-14T19:11:52.567-0600 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-02-14T19:11:52.567-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-14T19:11:52.567-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-14T19:11:52.567-0600 I CONTROL  [initandlisten] options: { config: "mongo.config", storage: { dbPath: "data/db", engine: "mmapv1" }, systemLog: { destination: "file", path: "log/mongo.log" } }
+2017-02-14T19:11:52.585-0600 I JOURNAL  [initandlisten] journal dir=data/db\journal
+2017-02-14T19:11:52.586-0600 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2017-02-14T19:11:52.620-0600 I JOURNAL  [durability] Durability thread started
+2017-02-14T19:11:52.621-0600 I JOURNAL  [journal writer] Journal writer thread started
+2017-02-14T19:11:52.625-0600 I CONTROL  [initandlisten] 
+2017-02-14T19:11:52.625-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-14T19:11:52.625-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-14T19:11:52.625-0600 I CONTROL  [initandlisten] 
+2017-02-14T19:11:53.092-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2017-02-14T19:11:53.101-0600 I NETWORK  [thread1] waiting for connections on port 27017
+2017-02-14T19:12:00.177-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50031 #1 (1 connection now open)
+2017-02-14T19:12:00.383-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50032 #2 (2 connections now open)
+2017-02-14T19:12:37.159-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50035 #3 (3 connections now open)
+2017-02-14T19:12:37.203-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50036 #4 (4 connections now open)
+2017-02-14T19:13:47.909-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50037 #5 (5 connections now open)
+2017-02-14T19:13:47.954-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50038 #6 (6 connections now open)
+2017-02-14T19:13:51.636-0600 I -        [conn6] end connection 127.0.0.1:50038 (6 connections now open)
+2017-02-14T19:13:51.638-0600 I -        [conn5] end connection 127.0.0.1:50037 (5 connections now open)
+2017-02-14T19:25:54.740-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50202 #7 (5 connections now open)
+2017-02-14T19:25:54.791-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50203 #8 (6 connections now open)
+2017-02-14T19:29:32.773-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50226 #9 (7 connections now open)
+2017-02-14T19:29:32.775-0600 I NETWORK  [conn9] received client metadata from 127.0.0.1:50226 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-02-14T19:32:24.781-0600 I -        [conn9] end connection 127.0.0.1:50226 (7 connections now open)
+2017-02-14T19:33:43.054-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50247 #10 (7 connections now open)
+2017-02-14T19:33:43.086-0600 I INDEX    [conn10] allocating new ns file data/db\Test.ns, filling with zeroes...
+2017-02-14T19:33:43.199-0600 I STORAGE  [FileAllocator] allocating new datafile data/db\Test.0, filling with zeroes...
+2017-02-14T19:33:43.200-0600 I STORAGE  [FileAllocator] creating directory data/db\_tmp
+2017-02-14T19:33:43.208-0600 I STORAGE  [FileAllocator] done allocating datafile data/db\Test.0, size: 64MB,  took 0.006 secs
+2017-02-14T19:33:43.228-0600 I COMMAND  [conn10] command Test.Collection command: insert { insert: "Collection", documents: 1000, writeConcern: { getLastError: 1, w: 1 }, ordered: false } ninserted:1000 keysInserted:1000 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 18, w: 18 } }, MMAPV1Journal: { acquireCount: { w: 39 }, acquireWaitCount: { w: 2 }, timeAcquiringMicros: { w: 468 } }, Database: { acquireCount: { w: 17, W: 1 } }, Collection: { acquireCount: { W: 17 } }, Metadata: { acquireCount: { W: 7 } } } protocol:op_query 146ms
+2017-02-14T19:33:43.232-0600 I -        [conn10] end connection 127.0.0.1:50247 (7 connections now open)
+2017-02-14T19:33:53.364-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50248 #11 (7 connections now open)
+2017-02-14T19:33:53.411-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50249 #12 (8 connections now open)
+2017-02-14T19:34:03.676-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50250 #13 (9 connections now open)
+2017-02-14T19:34:03.720-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50251 #14 (10 connections now open)
+2017-02-14T19:34:09.126-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50253 #15 (11 connections now open)
+2017-02-14T19:34:09.183-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50254 #16 (12 connections now open)
+2017-02-14T19:35:51.512-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50267 #17 (13 connections now open)
+2017-02-14T19:35:51.573-0600 I -        [conn17] end connection 127.0.0.1:50267 (13 connections now open)
+2017-02-14T19:36:02.087-0600 I -        [conn2] end connection 127.0.0.1:50032 (12 connections now open)
+2017-02-14T19:36:02.092-0600 I -        [conn1] end connection 127.0.0.1:50031 (11 connections now open)
+2017-02-14T19:36:03.944-0600 I -        [conn14] end connection 127.0.0.1:50251 (10 connections now open)
+2017-02-14T19:36:03.947-0600 I -        [conn13] end connection 127.0.0.1:50250 (9 connections now open)
+2017-02-14T19:36:05.959-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50270 #18 (9 connections now open)
+2017-02-14T19:36:06.003-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50271 #19 (10 connections now open)
+2017-02-14T19:36:11.535-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50272 #20 (11 connections now open)
+2017-02-14T19:36:11.574-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50273 #21 (12 connections now open)
+2017-02-14T19:37:10.737-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50287 #22 (13 connections now open)
+2017-02-14T19:37:10.774-0600 I -        [conn22] end connection 127.0.0.1:50287 (13 connections now open)
+2017-02-14T19:37:23.366-0600 I -        [conn19] end connection 127.0.0.1:50271 (12 connections now open)
+2017-02-14T19:37:23.368-0600 I -        [conn18] end connection 127.0.0.1:50270 (11 connections now open)
+2017-02-14T19:37:26.207-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50289 #23 (11 connections now open)
+2017-02-14T19:37:26.258-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50290 #24 (12 connections now open)
+2017-02-14T19:37:31.865-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50291 #25 (13 connections now open)
+2017-02-14T19:37:31.908-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50292 #26 (14 connections now open)
+2017-02-14T19:37:38.829-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50293 #27 (15 connections now open)
+2017-02-14T19:37:38.872-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50294 #28 (16 connections now open)
+2017-02-14T19:39:47.138-0600 I COMMAND  [conn23] dropDatabase Test starting
+2017-02-14T19:39:47.147-0600 I JOURNAL  [conn23] journalCleanup...
+2017-02-14T19:39:47.154-0600 I JOURNAL  [conn23] removeJournalFiles
+2017-02-14T19:39:47.154-0600 I JOURNAL  [conn23] old journal file will be removed: data/db\journal\j._0
+2017-02-14T19:39:47.159-0600 I JOURNAL  [conn23] journalCleanup...
+2017-02-14T19:39:47.159-0600 I JOURNAL  [conn23] removeJournalFiles
+2017-02-14T19:39:47.166-0600 I COMMAND  [conn23] dropDatabase Test finished
+2017-02-14T19:40:11.823-0600 I CONTROL  [thread2] Ctrl-C signal
+2017-02-14T19:40:11.824-0600 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-02-14T19:40:11.824-0600 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-02-14T19:40:11.824-0600 I NETWORK  [consoleTerminate] closing listening socket: 516
+2017-02-14T19:40:11.825-0600 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-02-14T19:40:11.826-0600 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-02-14T19:40:11.833-0600 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2017-02-14T19:40:11.833-0600 I STORAGE  [consoleTerminate] shutdown: final commit...
+2017-02-14T19:40:11.838-0600 I JOURNAL  [consoleTerminate] journalCleanup...
+2017-02-14T19:40:11.838-0600 I JOURNAL  [consoleTerminate] removeJournalFiles
+2017-02-14T19:40:11.838-0600 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2017-02-14T19:40:11.938-0600 I JOURNAL  [journal writer] Journal writer thread stopped
+2017-02-14T19:40:11.938-0600 I JOURNAL  [durability] Durability thread stopped
+2017-02-14T19:40:11.938-0600 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2017-02-14T19:40:11.943-0600 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2017-02-14T19:40:11.944-0600 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-02-14T19:40:11.944-0600 I CONTROL  [consoleTerminate] now exiting
+2017-02-14T19:40:11.945-0600 I CONTROL  [consoleTerminate] shutting down with code:12

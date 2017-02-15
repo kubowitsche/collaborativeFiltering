@@ -8,7 +8,7 @@ namespace DataAcess.Dao
 {
     public class ReviewItemDao : MongoBase<ReviewItemDto>, IReviewItemDao
     {
-        public ReviewItemDao() : base("ThisIsADatabase.ReviewItem")
+        public ReviewItemDao() : base("ReviewItem")
         {
         }
 
@@ -19,12 +19,12 @@ namespace DataAcess.Dao
 
         public void Delete(ReviewItemDto dto)
         {
-            GetCollection().Remove(Query.EQ("_id", dto.id));
+            //GetCollection().Remove(Query.EQ("_id", dto.id));
         }
 
-        public ReviewItemDto GetById(long id)
+        public ReviewItemDto GetById(long review_item_id)
         {
-            return GetCollection().FindOne(Query.EQ("_id", id));
+            return GetCollection().FindOne(Query.EQ("review_item_id", review_item_id));
         }
 
         public ReviewItemDto GetByName(string name)

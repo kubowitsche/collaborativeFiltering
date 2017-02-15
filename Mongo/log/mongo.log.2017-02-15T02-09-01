@@ -1,0 +1,94 @@
+2017-02-14T19:46:39.388-0600 I CONTROL  [initandlisten] MongoDB starting : pid=9928 port=27017 dbpath=data/db 64-bit host=DESKTOP-9DEVEA0
+2017-02-14T19:46:39.388-0600 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-02-14T19:46:39.389-0600 I CONTROL  [initandlisten] db version v3.4.0
+2017-02-14T19:46:39.389-0600 I CONTROL  [initandlisten] git version: f4240c60f005be757399042dc12f6addbc3170c1
+2017-02-14T19:46:39.389-0600 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t-fips  3 May 2016
+2017-02-14T19:46:39.389-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-14T19:46:39.389-0600 I CONTROL  [initandlisten] modules: none
+2017-02-14T19:46:39.389-0600 I CONTROL  [initandlisten] build environment:
+2017-02-14T19:46:39.390-0600 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-02-14T19:46:39.390-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-14T19:46:39.390-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-14T19:46:39.390-0600 I CONTROL  [initandlisten] options: { config: "mongo.config", storage: { dbPath: "data/db", engine: "mmapv1" }, systemLog: { destination: "file", path: "log/mongo.log" } }
+2017-02-14T19:46:39.426-0600 I JOURNAL  [initandlisten] journal dir=data/db\journal
+2017-02-14T19:46:39.430-0600 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2017-02-14T19:46:39.468-0600 I JOURNAL  [durability] Durability thread started
+2017-02-14T19:46:39.469-0600 I JOURNAL  [journal writer] Journal writer thread started
+2017-02-14T19:46:39.474-0600 I CONTROL  [initandlisten] 
+2017-02-14T19:46:39.474-0600 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-14T19:46:39.474-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-14T19:46:39.474-0600 I CONTROL  [initandlisten] 
+2017-02-14T19:46:40.007-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2017-02-14T19:46:40.016-0600 I NETWORK  [thread1] waiting for connections on port 27017
+2017-02-14T19:46:45.698-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50516 #1 (1 connection now open)
+2017-02-14T19:46:45.734-0600 I NETWORK  [conn1] received client metadata from 127.0.0.1:50516 conn1: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T19:46:46.501-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50518 #2 (2 connections now open)
+2017-02-14T19:46:46.503-0600 I NETWORK  [conn2] received client metadata from 127.0.0.1:50518 conn2: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T19:46:53.426-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50520 #3 (3 connections now open)
+2017-02-14T19:46:53.442-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50521 #4 (4 connections now open)
+2017-02-14T19:46:54.800-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50522 #5 (5 connections now open)
+2017-02-14T19:46:54.807-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50523 #6 (6 connections now open)
+2017-02-14T19:47:05.843-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50528 #7 (7 connections now open)
+2017-02-14T19:47:07.185-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50529 #8 (8 connections now open)
+2017-02-14T19:47:07.241-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50530 #9 (9 connections now open)
+2017-02-14T19:47:09.193-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50531 #10 (10 connections now open)
+2017-02-14T19:47:09.197-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50532 #11 (11 connections now open)
+2017-02-14T19:47:10.125-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50534 #12 (12 connections now open)
+2017-02-14T19:47:10.179-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50535 #13 (13 connections now open)
+2017-02-14T19:47:11.175-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50537 #14 (14 connections now open)
+2017-02-14T19:47:11.224-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50538 #15 (15 connections now open)
+2017-02-14T19:47:11.583-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50539 #16 (16 connections now open)
+2017-02-14T19:47:11.587-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50540 #17 (17 connections now open)
+2017-02-14T19:47:12.029-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50541 #18 (18 connections now open)
+2017-02-14T19:47:12.071-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50542 #19 (19 connections now open)
+2017-02-14T19:47:14.239-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50543 #20 (20 connections now open)
+2017-02-14T19:47:14.281-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50544 #21 (21 connections now open)
+2017-02-14T19:47:15.648-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50547 #22 (22 connections now open)
+2017-02-14T19:47:15.699-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50548 #23 (23 connections now open)
+2017-02-14T19:47:16.405-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50549 #24 (24 connections now open)
+2017-02-14T19:47:16.458-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50550 #25 (25 connections now open)
+2017-02-14T19:47:31.906-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50558 #26 (26 connections now open)
+2017-02-14T19:47:37.203-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50559 #27 (27 connections now open)
+2017-02-14T19:47:37.206-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50560 #28 (28 connections now open)
+2017-02-14T19:47:38.876-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50561 #29 (29 connections now open)
+2017-02-14T19:47:38.881-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50562 #30 (30 connections now open)
+2017-02-14T19:48:26.268-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50575 #31 (31 connections now open)
+2017-02-14T19:48:31.911-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50576 #32 (32 connections now open)
+2017-02-14T19:57:15.782-0600 I -        [conn2] end connection 127.0.0.1:50518 (32 connections now open)
+2017-02-14T20:00:02.264-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50686 #33 (32 connections now open)
+2017-02-14T20:00:02.288-0600 I -        [conn33] end connection 127.0.0.1:50686 (32 connections now open)
+2017-02-14T20:00:11.622-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50688 #34 (32 connections now open)
+2017-02-14T20:00:11.622-0600 I NETWORK  [conn34] received client metadata from 127.0.0.1:50688 conn34: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T20:00:17.876-0600 I -        [conn1] end connection 127.0.0.1:50516 (32 connections now open)
+2017-02-14T20:00:17.877-0600 I -        [conn34] end connection 127.0.0.1:50688 (31 connections now open)
+2017-02-14T20:00:33.953-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50779 #35 (31 connections now open)
+2017-02-14T20:00:34.018-0600 I NETWORK  [conn35] received client metadata from 127.0.0.1:50779 conn35: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T20:00:34.158-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50780 #36 (32 connections now open)
+2017-02-14T20:00:34.160-0600 I NETWORK  [conn36] received client metadata from 127.0.0.1:50780 conn36: { driver: { name: "mongo-csharp-driver", version: "2.4.2.27" }, os: { type: "Windows", name: "Microsoft Windows 10.0.14393", architecture: "x86_32", version: "10.0.14393" }, platform: ".NET Framework 4.0.0.0" }
+2017-02-14T20:01:23.520-0600 I -        [conn31] end connection 127.0.0.1:50575 (32 connections now open)
+2017-02-14T20:01:23.526-0600 I -        [conn7] end connection 127.0.0.1:50528 (31 connections now open)
+2017-02-14T20:01:26.485-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50781 #37 (31 connections now open)
+2017-02-14T20:01:26.538-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50782 #38 (32 connections now open)
+2017-02-14T20:01:32.175-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50783 #39 (33 connections now open)
+2017-02-14T20:01:32.216-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50784 #40 (34 connections now open)
+2017-02-14T20:03:44.246-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50802 #41 (35 connections now open)
+2017-02-14T20:03:44.290-0600 I NETWORK  [thread1] connection accepted from 127.0.0.1:50803 #42 (36 connections now open)
+2017-02-14T20:05:10.552-0600 I CONTROL  [thread2] Ctrl-C signal
+2017-02-14T20:05:10.553-0600 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2017-02-14T20:05:10.553-0600 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2017-02-14T20:05:10.553-0600 I NETWORK  [consoleTerminate] closing listening socket: 500
+2017-02-14T20:05:10.556-0600 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2017-02-14T20:05:10.557-0600 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2017-02-14T20:05:10.564-0600 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2017-02-14T20:05:10.564-0600 I STORAGE  [consoleTerminate] shutdown: final commit...
+2017-02-14T20:05:10.569-0600 I JOURNAL  [consoleTerminate] journalCleanup...
+2017-02-14T20:05:10.574-0600 I JOURNAL  [consoleTerminate] removeJournalFiles
+2017-02-14T20:05:10.574-0600 I JOURNAL  [consoleTerminate] old journal file will be removed: data/db\journal\j._0
+2017-02-14T20:05:10.575-0600 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2017-02-14T20:05:10.667-0600 I JOURNAL  [journal writer] Journal writer thread stopped
+2017-02-14T20:05:10.668-0600 I JOURNAL  [durability] Durability thread stopped
+2017-02-14T20:05:10.668-0600 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2017-02-14T20:05:10.673-0600 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2017-02-14T20:05:10.673-0600 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2017-02-14T20:05:10.674-0600 I CONTROL  [consoleTerminate] now exiting
+2017-02-14T20:05:10.675-0600 I CONTROL  [consoleTerminate] shutting down with code:12

@@ -9,7 +9,7 @@ namespace DataAcess.Dao
 {
     public class ReccommendationDao : MongoBase<ReccommendationDto>, IReccommendationDao
     {
-        public ReccommendationDao() : base("ThisIsADatabase.Reccommendation")
+        public ReccommendationDao() : base("Reccommendation")
         {
         }
 
