@@ -1,6 +1,8 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
+.vagrant/
+ubuntu-xenial-16.04-cloudimg-console.log
 
 /development/.vs/config
 /development/collaborative filtering/obj/Debug
