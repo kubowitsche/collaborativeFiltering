@@ -10,7 +10,7 @@ using MongoDB.Driver.Builders;
 
 namespace DataAcess.Dao
 {
-    class ReviewDao : MongoBase<ReviewDto>, IReviewDao
+    public class ReviewDao : MongoBase<ReviewDto>, IReviewDao
     {
         public ReviewDao() : base("ThisIsADatabase.Review")
         {
