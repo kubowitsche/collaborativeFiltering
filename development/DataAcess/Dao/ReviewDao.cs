@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataAcess.Dto;
 using DataAcess.IDao;
 using DataAcess.Mongo;
-using MongoDB.Driver.Builders;
 
 namespace DataAcess.Dao
 {
-    class ReviewDao : MongoBase<ReviewDto>, IReviewDao
+    public class ReviewDao : MongoBase<ReviewDto>, IReviewDao
     {
         public ReviewDao() : base("ThisIsADatabase.Review")
         {
@@ -20,6 +15,10 @@ namespace DataAcess.Dao
         {
             GetCollection().Save(reviewDto);
         }
-       
+
+        public void Update(long user_id, long item_id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

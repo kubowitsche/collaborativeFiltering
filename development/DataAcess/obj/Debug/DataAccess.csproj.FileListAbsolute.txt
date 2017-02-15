@@ -12,3 +12,17 @@ C:\Users\getkaSDL\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB
 C:\Users\getkaSDL\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.Legacy.xml
 C:\Users\getkaSDL\collaborativeFiltering\development\DataAcess\obj\Debug\DataAcess.dll
 C:\Users\getkaSDL\collaborativeFiltering\development\DataAcess\obj\Debug\DataAcess.pdb
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\DataAcess.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\DataAcess.pdb
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Bson.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.Legacy.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Bson.xml
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.xml
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\bin\Debug\MongoDB.Driver.Legacy.xml
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\obj\Debug\DataAcess.dll
+C:\Users\kubowitsche\collaborativeFiltering\development\DataAcess\obj\Debug\DataAcess.pdb
