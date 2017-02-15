@@ -1,15 +1,11 @@
 SITE
-  remote: http://community.opscode.com/api/v1
+  remote: https://supermarket.chef.io/api/v1
   specs:
-    apt (5.0.1)
-      compat_resource (>= 12.16.3)
+    apt (6.0.0)
     ark (2.2.1)
       build-essential (>= 0.0.0)
       seven_zip (>= 0.0.0)
       windows (>= 0.0.0)
-    atom (0.2.0)
-      apt (>= 0.0.0)
-      homebrew (>= 0.0.0)
     build-essential (7.0.3)
       compat_resource (>= 12.16.3)
       mingw (>= 1.1)
@@ -38,8 +34,6 @@ SITE
 
 DEPENDENCIES
   apt (>= 0)
-  atom (>= 0)
-  compat_resource (>= 0)
   java (>= 0)
   maven (>= 0)
   scala (>= 0)
