@@ -38,24 +38,23 @@ namespace collaborative_filtering.Controllers
 
         public ReviewItem GenerateRecommendation()
         {
-            //get users
-            List<UserDto> users = userDao.GetAllUsers();
-            UserDto user = users.First();
-            //get recommendations by user id
-            List<ReccommendationDto> recommendations = recDao.GetByUserId(user.user_id);
-            //find top 10
-            recommendations.Sort();//Figure out your comaparer
-            int choosing = recommendations.Count() > 9 ? 10 : recommendations.Count()-1;
+            List<ReccommendationDto> recommendations = recDao.GetByUserId(13);
             Random rnd = new Random();
-            //int random = rnd.Next(0, choosing);
-            int random = rnd.Next(0, 1000);
-            //long itemId = recommendations.ElementAt(random).item_id;
-            ReviewItemDto revItem = itemDao.GetById(random);
+            int random = 0;
+            ReviewItemDto revItem = null;
+            while (revItem == null)
+            {
+                random = rnd.Next(0, recommendations.Count);
+                long itemId = recommendations.ElementAt(random).review_item_id;
+                revItem = itemDao.GetById(random);
+            }
+            
+
             ReviewItem modelItem = new ReviewItem();
             modelItem.Description = revItem.description;
             modelItem.Name = revItem.name;
             modelItem.recommendation = new Recommendation();
-            //modelItem.recommendation.EstimatedRating = recommendations.ElementAt(random).rating;
+            modelItem.recommendation.EstimatedRating = recommendations.ElementAt(random).rating;
             return modelItem;
         }
 

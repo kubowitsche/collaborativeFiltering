@@ -11,7 +11,7 @@ namespace DataAcess.Dto
     {
         public ObjectId _id { get; set; }
         public long user_id { get; set; }
-        public long item_id { get; set; }
-        public float rating { get; set; }
+        public long review_item_id { get; set; }
+        public double rating { get; set; }
     }
 }
